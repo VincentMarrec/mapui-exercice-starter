@@ -34,6 +34,7 @@ $ docker run --rm -it -p 27017:27017 mongo
 ### Server
 
 ```
+$ npm install
 $ npm run start:dev
 ```
 
@@ -42,6 +43,7 @@ $ npm run start:dev
 ### Client
 
 ```
+$ npm install
 $ npm run start
 ```
 
