@@ -1,0 +1,12 @@
+<h2>Liste des patients et traitements liés au médecin : {{doctor.firstName}} {{doctor.lastName}}</h2>
+
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let patient of patients;">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{patient.firstName}} {{patient.lastName}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p *ngFor="let treatment of filterTreatmentsRelatedToDoctor(patient.treatments);">[{{treatment.code}}] : {{treatment.name}} {{treatment.start | date:'dd/MM/yyyy'}} - {{treatment.end | date:'dd/MM/yyyy'}}</p>
+      </mat-expansion-panel>
+</mat-accordion>

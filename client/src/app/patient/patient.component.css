@@ -1,0 +1,19 @@
+.fab-btn {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+}
+
+.list-item:hover {
+    background-color: #ddd !important;
+    /* cursor: pointer; */
+}
+
+h2 {
+    margin-bottom: 0px;
+}
+
+.secondary-informations {
+    color: #aaa;
+    margin-bottom: 16px;
+}

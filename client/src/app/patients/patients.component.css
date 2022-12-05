@@ -1,0 +1,10 @@
+.fab-btn {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+}
+
+.list-item:hover {
+    background-color: #ddd !important;
+    cursor: pointer;
+}

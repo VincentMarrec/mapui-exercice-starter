@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>Ajouter un médecin</h1>
+<div mat-dialog-content>
+    <div class="two-fields-container">
+        <mat-form-field appearance="fill">
+          <mat-label>Prénom</mat-label>
+          <input matInput [(ngModel)]="data.doctor.firstName">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Nom</mat-label>
+          <input matInput [(ngModel)]="data.doctor.lastName">
+        </mat-form-field>
+    </div>
+    <div class="two-fields-container">
+        <mat-form-field appearance="fill">
+          <mat-label>Spécialité</mat-label>
+          <input matInput [(ngModel)]="data.doctor.speciality">
+        </mat-form-field>
+    </div>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-button (click)="onCancelClick()">Annuler</button>
+  <button mat-button [mat-dialog-close]="data.doctor" cdkFocusInitial>Ok</button>
+</div>
